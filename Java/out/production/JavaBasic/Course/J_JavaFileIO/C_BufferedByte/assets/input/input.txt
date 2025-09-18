@@ -1,1 +1,0 @@
-Ini adalah input buffered stream

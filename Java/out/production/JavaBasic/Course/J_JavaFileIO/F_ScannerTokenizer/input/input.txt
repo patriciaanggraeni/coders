@@ -1,2 +1,0 @@
-makanan,utama,anak,kost,adalah,mie
-tapi,rasane,tanah,wenak,poll,po,maneh,seng,duduh
