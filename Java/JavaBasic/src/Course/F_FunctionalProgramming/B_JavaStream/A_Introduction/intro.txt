@@ -1,0 +1,73 @@
+Materi ini sangat berkaitan dengan Java Collection dan Java Lambda 
+
+Java Collection: Sekumpulan dari beberapa objek. jadi untuk menyimpan
+sebuah elemen ke dalam sebuah Collection dan Menyimpan beberapa Collection 
+dalam satu buah entitas bisa menggunakan Java Collecion, akan tetapi jika ingin 
+memproses sebuah elemen dari sebuah Collection, menggunakan Java Stream.
+
+
+Jadi Perbedaan Java Collectoin dengan Java Stream adalah:
+    - Java Collection: Menyimpan Elemen-elemen ke dalam sebuah Collection. dan dari 
+      Collection tadi (group of elements) bisa di simpan di dalam Collection Lainnya.
+    - Java Stream: Memproses elemen-elemen / objek dari Collection tadi.
+
+
+Untuk melakukan Pemrosesan terhadap sebuha Collection, Java Strem memiliki rentetan method 
+untuk memprosesnya. tapi sebelum itu di Java Stream, memiliki dua mekanisme berbeda, yaitu 
+    - Filter
+    - Map
+
+1. Apa itu Filter? Apa yang bisa dilakukan?
+Misal ada collection dan menulis sebuah kondisi. jadi dasarnya ada di kondisi, sebuah Collection akan difilter
+dan dimasukkan ke dalam Collection baru untuk bisa melakukan tujuan lain. Misal disebuah Collection, meyimpan 
+sebuah runtutan angka, dan ingin memfilter hanya angka ganjil/genap saja yang diambil lalu mesukkannya ke dalam 
+sebuah Collection baru.
+
+2. Apa itu Map? Apa yang bisa dilakukan?
+Jadi, kita akan mengambil setiap elemen yang ada di collection dan diberi sebuah operasi, lalu setelah itu, akan ditaruh ke sebuah collection baru untuk melakukan tujuan lain. Contoh: mengalikan angka
+5 di setiap elemen collection. (ambil semua elemen dan lakukan sebuah operasi dan simpan hasil ke collection baru).
+
+Java Stream pertama kali diperkenalkan pada Java 8, mungkin mirip dengan Java File I/O,
+akan tetapi hal ini berbeda.
+    - Untuk File I/O: import java.io.Stream (bekerja dengan file)
+    - Untuk Stream: import java.util.Stream (bekerja dengan collection)
+
+Contoh Kasus: tidak ingin mengakses atau memproses elemen dari collection secara langsung (dijadikan source),
+jadi taruh semua elemen collection ke dalam stream, jadi elemen (source) yang ada di dalam collection
+tidak akan berubah, lalu hasil bisa ditaruh ke collection baru. Stream seperti API.
+
+Apa saja methodnya (setelah melakukan filtering / mapping data)?
+    - filter()   : Untuk memfilter data dengan memasukkan predicate sebagai parameternya
+    - collect()  : mengambil data yang sudah di filter / map, bisa didapatkan dan di simpan
+                   ke dalam collection baru.
+    - count()    : Mengambil jumlah elemen yang terfilter / termapping.
+    - sorted()   : Mengurutkan elemen setelah di filter / mapping.
+    - distinct() : Mengambil data yang berbeda saja (unik) / menghilangkan
+                   duplikasi data.
+    - foreach()    : Membaca semua elemen di dalam stream.
+    - max(), min() : Mengambil elemen dengan nilai terbesar atau terkecil.
+
+Untuk menggunakan semua konsep (filtering dan Mapping), menggunakan lambda Expressions.
+     - Untuk menggunakan operasi di Stream, gunakan Lambda Expressions
+     - Untuk melakukan operasi terhadap collection, menggunakan Stream
+
+Note:
+    - method filter menerima parameter input berupa predicate (pake lambda expressions)
+    - method foreach menerima parameter input berupa consumer (pake lambda expressions)
+
+Tips!
+    - Filter: gunakan Presicate jika ingin memfilter sebuah elemen collection
+    - Map: gunakan Consumer jika ingin me-mapping sebuah elemen collection
+
+Apa itu FlatMap? FlatMap adalah method dari java stream yang meiliki konsep dan perilaku sama seperti method Map. akan tetapi yang membedakan adalah di Map, hanya bisa mengembalikan nilai tunggal setelah melakukan suatu aksi, sedangkan di FlatMap, bisa mengembalikan nilai dalam bentuk jamak. biasanya FlatMap digunakan ketika sebuah Collection sudah komplek (misal seperti collection di dalam collection).
+
+Cara kerja FlatMap adalah akan mengambil setiap collection yang ada di dalam collection, lalu akan dipindahkan ke collection ynag baru. jadi intinya adalah jika menggunakan FlatMap, maka bisa mengambil dan mengembalikan banyak sekaligus nilai dari sebuah collection. jadi membutuhkan sebuah inputan dan megembalikan object stream (object of stream).
+
+Macam - macam non-terminal method di Java Stream:
+    - filter(), map(), flaMap(), distinct(), limit()
+    -> return stream of object (collection)
+
+Macam - macam terminal method di Java Straam:
+    - collects(), count(), min(), max(), forEach(), toArray()
+    -> return result of stream
+

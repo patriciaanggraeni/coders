@@ -1,0 +1,2 @@
+Membaca file dengan characther buffered stream
+ini adalah baris kedua dari file

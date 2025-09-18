@@ -1,0 +1,38 @@
+Apa itu linkedList? kumpulan elemen yang dihubungkan dengan sebuah node. jika tidak ada node sebelumnya atau sesudahnya, maka bisa dikatakan null.
+
+method yang bisa digunakan untuk operasi LinkedList:
+- untuk insert dan deletion, disarankan digunakan untuk operasi LinkedList
+- untuk mengambil data, disarankan digunakan untuk ArrayList
+
+kenapa? karena LinkedList akan banyak memakan waktu untuk mengambil sebuah satu data saja, karena setiap ingin
+mengambil data (dalam kasus banyak data), maka akan mulai dari awal.
+
+LinkedList boleh:
+    - memiliki duplikasi data
+    - Memasukkan dan Menghapus data
+    - Mesasukkan nilai null
+    - urutan cetak dipertahankan
+
+basic insertion: menggunakan method add dan addAll
+    - add(object) atau add(index, object)
+    - addAll(collection)
+
+basic deletion: menggunakan method remove dan removeAll
+    - remove() atau remove(index)
+    - removeAll(collection)
+
+basic get and set: mengambil dan mengubah nilai LinkedList
+    - method get(): mengambil nilai dari LinkedList ( getFirst(), getLast() juga bisa ) 
+    - method set(index, object): mengubah nilai sebelumnya berdasarkan index
+
+bisa menggunakan fungsi khusus dari package java.util.Collection
+    - Collection.sort(): mengurutkan elemen secara ascending
+    - Collection.shuffle(): mengacak posisi elemen LinkedList
+
+jadi method yang ada di LinkedList hampir sama dengan method yang ada di ArrayList
+
+LinkedList juga menggunakan konsep Stack, ada beberapa method khusus yang bisa digunakan,
+    - addFirst() dan addLast()
+    - removeFirst() dan removeLast()
+    - getFirst() dan getLast()
+

@@ -1,0 +1,24 @@
+ArrayList dari package java.util
+
+deklarasi ArrayList:
+    - ArrayList obj = new ArrayList(); 
+        -> default deklaration / heterogeneos
+    - ArrayList<String> obj = new ArrayList<String>(); 
+        -> only String / homogeneous
+
+method yang ada di ArrayList:
+    - add(objek o)         : menambahkan objek ke dalam ArrayList
+    - add(index, objek o)  : menambahkan elemen / objek berdasarkan index (jika ada objek sebelumnya memiliki index yang sama, maka objek tersebut akan bergeser kedepan, jadi tidak tertimpa)
+    - addAll(collection c) : menambahkan langsung kumpulan dari objek
+    - remove(index)           : menghapus objek berdasarkan index di ArrayList
+    - removeAll(collection c) : menghapus langsung kumpulan objek (collection)
+    - size()     : mengembalikan banyak dari objek yang ada di ArrayList
+    - get(index) : mengambil objek atau elemen yang ada di dalam ArrayList
+    - set(index, new obj) : menimpa objek sebelumnya dengan objek baru
+    - contains(obj) : mengecek apakah objek yang dimaksud ada di dalam ArrayList
+    - isEmpty() : menegecek apakah ArrayList kosong atau tidak
+
+jika ingin mengurutkan elemen array list (import dari Collections):
+
+    - Collections.sort(ArrayList) -> mengurutkan
+    - Collections.shuffle(ArrayList) -> mengacak

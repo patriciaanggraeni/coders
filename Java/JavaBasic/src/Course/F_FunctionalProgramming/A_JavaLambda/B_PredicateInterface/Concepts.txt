@@ -1,0 +1,16 @@
+Pre-defined Functional Interfaces? 
+    1. Interface memiliki predikat
+    2. Interface memiliki Fungsi
+    3. Interface memiliki Consumer
+    4. Interface memiliki Supplier 
+
+Interface di atas sudah ada di Java, dapat di import melalui java.util.Function.<functional>
+
+Apa itu Predicate? predicate merupakan sebuah interface yang sudah disediakan oleh java. 
+    - Bisa diimport melalui package java.util.function.predicate;
+    - Di dalam Interface predicate terdapat method FunctionalInterface, yaitu test().
+    - Method abstract ini hanya bisa menampung satu argument dan akan mengembalikan nilai boolean.
+      maka dari itu disarankan, menyertai method ini untuk mengecek perilaku program kita.
+    - Tipe data dari parameter dari method test() ini adalah <T>, yaitu bisa menampung semua tipe data (Generic).
+    - di dalam fungsi ini, kondisi bisa lebih dari satu (menggunakan operator logika).
+    - Lambda sangat berkaitan dengan Java Collecrion

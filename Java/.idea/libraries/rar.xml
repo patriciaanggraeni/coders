@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="rar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JavaGames/out/production/JavaGames/RPG/res/rar/Walking sprites-20230124T103039Z-001.zip!/" />
+      <root url="jar://$PROJECT_DIR$/JavaGames/out/production/JavaGames/RPG/res/rar/tiles.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

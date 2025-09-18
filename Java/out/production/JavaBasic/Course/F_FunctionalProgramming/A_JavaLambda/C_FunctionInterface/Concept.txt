@@ -1,0 +1,34 @@
+Predefined Functional Interfaces. 
+    - Predicate
+    - Function 
+    - Consumer
+    - Supplier
+
+1. Predicate adalah sebuah interface class yang memiliki satu method 
+yaitu test() dengan memiliki satu argument yang dapay mengembalikan nilai 
+boolean.
+
+2. Function Interface juga memiliki satu FunctionalInterface yaitu apply(). 
+ini berfungsi untuk mengembalikan nilai yang dimasukkan / mengembalikan 
+satu nilai dengan tipe data apapun (Object / Generic).
+
+Bagaimana cara membuatnya? 
+public R apply(T) {
+    body...
+}
+
+Keterangan: 
+    - T: tipe data generic
+    - R: tipe data return
+
+Di Function terdapat method untuk menggabungkan method apply() atau 
+Function Chaining, yaitu: 
+    - anThen(): menggabungkan dua buah Function, akan mengembalikan nilai return dari Function ke satu, dan nilai return tersebut 
+    akan ditangkap oleh parameter Function ke dua.
+    - compose(): kebalikan dari andThen().
+
+Kesimpulan:
+    1. di dalam Interface Function terdapat satu FunctionalInterface, yaitu apply();
+    2. method apply() menerima dua parameter, satu untuk inputan dan satu untuk tipe pengembaliannya
+    3. method apply() bisa menggunakan konsep multiple / ganda dan juga bisa dikombinasi dengan method test().
+    4. di dalam Function, juga ada method (nukan FunctionalInterface) yaitu, andThen() dan compose().

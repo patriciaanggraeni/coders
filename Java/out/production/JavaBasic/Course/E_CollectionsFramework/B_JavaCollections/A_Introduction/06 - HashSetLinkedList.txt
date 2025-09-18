@@ -1,0 +1,11 @@
+Apa perbedaan dari HashSet dan LinkedHashSet
+
+HashSet: 
+- Duplicate tidak diijinkan
+- Urutsan tidak dapat dipertahankan
+
+LinkedHashSet: 
+- Duplicate tidak diijinkan 
+- Urutan dapat dipertahankan
+
+intial dan load factor sama (16 / 0.75%)

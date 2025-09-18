@@ -1,0 +1,31 @@
+Java Collection - Queue
+
+Queue di collection adalah sebuah Class Interface, dan Queue juga mempunyai turunan Interface, yaitu Dequeue, BlockingQueue, dan BlockingDequeue. dan mempunyai implementasi Class, yaitu PriorityQueue dan LinkedList. LinkedList juga hasil implementasi dari Interface Class, yaitu List. 
+
+Queue meenggunakan konsep FIFO (First In First Out).
+jadi sebuah elemen akan masuk terlebih dahulu dan elemen tersebut juga akan keluar terlebih dahulu. jadi ada bagian head dan tail. 
+
+Apa bedanya Class LinkedList dan PriorityQueue? 
+- elemen secara otomatis urut saat ditampilkan ke kosnol (hanya berlaku di PriorityQueue) 
+- duplikasi elemen atau objek diinjinkan
+- PriorityQueue tidak bisa menampung banyak tipe data / tidak mendukung Heterogeneous Data. 
+
+Method yang bisa digunakan dari Class Interface Queue: 
+- add()
+- offer()
+- element()
+- peek() 
+- remove()
+- poll()
+
+Apa bedanya method add() dan offer()? 
+- add(): jika berhasil, return true, jika tidak berhasil return exception. 
+- offer(): jika berhasil, return true, jika tidak berhasi return null / false.
+
+Apa bedanya method elemen() dan peek()?
+- kedua memang dapat melakukan hal yang sama, yaitu akan mengembalikan nilai dari elemen head yang ada di dalam Queue. 
+- perbedaannya yang sebenarnya adalah jika Queue kosong dan masih tetap ingin mengambil nilai dari elemen head, maka jika menggunakan method element() maka akan mereturn exception, dan jika menggunakan method peek() maka akan mereturn nilai null (bukan false).
+
+Apa bedanya method remove() dan poll()? 
+- kedua dapat melakukan hal yang sama, yaitu akan mereturn nilai dari elemen head lalu setelah mereturn, maka elemen head akan otomatis dihapus. intinya mengambil dan mengahaous elemen head.
+- perbedaanya adalah jika Queue kosong dan masih tetap ingin mengambil dan menghapus elemen, maka jika menggunakan method remove() akan mereturn exception, dan jika menggunakan method poll() maka akan mereturn nilai null (bukan false).

@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS db_oblineshop;
+CREATE DATABASE db_onlineshop;
+USE db_onlineshop;
+
+DROP TABLE IF EXISTS tbl_barang;
+
+CREATE TABLE tbl_barang (
+	id_barang INT UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nama_barang VARCHAR(255) NOT NULL,
+    harga_barang INT UNSIGNED NOT NULL,
+    stok_barang INT UNSIGNED NOT NULL,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);

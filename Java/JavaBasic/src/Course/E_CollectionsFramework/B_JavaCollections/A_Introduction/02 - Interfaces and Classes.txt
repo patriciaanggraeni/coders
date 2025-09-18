@@ -1,0 +1,56 @@
+Collection berisi barbagai interface class. fungsi dari collection adalah merepresentasikan banyak objek yang dijadikan menjadi satu entitas yang mengandung method umum agar bisa melakukan sebuah tindakan. hal ini membutuhkan interface dan class.
+
+Apa itu collection? sebuah interface yang berada di bawah collection framework. Collection(I). untuk mengimportnya, yaitu dari paket java.util, mengandung beberapa method dan method method tersebut bisa digunakan untuk melakukan operasi untuk objek collectionnya. Collections(C), Seperti List, Set, Queue, dan Map termasuk implementasi dari collection interface. dapat menampung banyak objek menjadi satu group / entitas tunggal.
+
+Apa itu List(I) 
+    - Merupakan class turunan dari collection(I)
+    - Urutan dapat dipertahankan
+    - Duplikasi diperbolehkan
+
+Apa itu Set(I):
+    - Urutan data tidak dapat dipertahankan
+    - Duplikasi tidak diperbolehkan
+
+Apa itu Queue(I):
+    - PriorityQueue (Implementasi dari Queue)
+    - FIFO (First In First Out)
+
+Apa itu Map(I):
+    - memiliki key dan values (key and value pair)
+    - key tidak bisa terduplikasi / harus unik  (tidak diberbolehkan adanya duplikasi)
+    - value bisa di duplikasi (diperbolehkan)
+
+
+Class yang mengimplementasikan List:
+    - ArrayList Class
+    - LinkedList Class
+    - Vector Class (extends dari Stack) disebut legacy class
+
+Class yang mengimplementasikan Set:
+    - HashSet
+    - LinkedHashSet
+
+Class yang mengimplementasikan Map:
+    - HashMap
+    - LinkedHashMap
+
+
+ada beberapa method di collection, yaitu:
+    - add(Object O) : menambahkan satu objek ke dalam collection
+    - addAll(Collection C) : menambahkan beberapa objek (group) ke dalam collection
+    - remove(Object O) : menghapus saru objek dari collection
+    - removeAll(Collection C) : menghapus semua objek yang ada di dalam collection
+    - retainAll(Collection C) : menghapus objek kecuali objek yang dipilih (except)
+    - clear() : membersihkan semua objek dari collection
+    - isEmpty() : mengecek apakah collection kosong atau tidak
+    - size() : mengembalikan jumlah objek yang ada di dalam collection
+    - contains(Objek O) : mengecek apakah objek yang dimaksud ada di dalam colection
+    - containsAll(Collection C) : semua yang ada di group apakah merepresentasikan collection atau tidak
+    - toArray(Collection C) : Convert dari collection ke Array (mengembalikan objek Array)
+
+Method di dalam List:
+    - add(index, objek o) : menambahkan object sebanyak satu, dengan inputan index
+    - addAll(index, collection c) : menambahkan sebuah collection di dalam collection lain
+    - remove(value) : menghapus sebuah object (berdasarkan nilai)
+    - get(index)    : return objek dari list
+    - set(index, object o) : replace / update objek lama dengan objek baru
